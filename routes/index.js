@@ -22,7 +22,7 @@ router.get('/:compound', function(req, res, next) {
     returnData *= Number(compound[0]);
   }
 
-  res.json({"compound": compound, enthalpy: returnData});
+  res.json({"compound": compound, entropy: returnData});
 });
 
 module.exports = router;
